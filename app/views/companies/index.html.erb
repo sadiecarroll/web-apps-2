@@ -1,12 +1,13 @@
-<%  %>
-
 <h1>My CRM</h1>
  
 <ul>
   <% for company in @companies %>
     <li>
       <a href="/companies/<%= company["id"] %>">
-      <%= company["name"] %>
+        <%= company["name"] %>
+      </a>
     </li>
   <% end %>
 </ul>
+
+<p><a href="/companies/new">Create a new company</a></p>
